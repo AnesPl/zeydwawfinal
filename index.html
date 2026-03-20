@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZeydWav</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="cursor-glow"></div>
+
+<!-- HERO -->
+<section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videos/hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <h1 class="hero-title">ZeydWav</h1>
+        <p class="hero-subtitle">Music Producer • Audio Engineer • Sound Designer</p>
+        <p class="hero-tagline">Turning raw ideas into industry-ready records.</p>
+
+        <div class="hero-buttons">
+            <button class="btn-primary">Book Session</button>
+            <button class="btn-secondary">Listen</button>
+        </div>
+
+        <div class="scroll-indicator">⌄</div>
+    </div>
+</section>
+
+<div class="wave-divider">
+<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Book a Session</h2>
+    <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="booking">
+      <input type="hidden" name="bot-field">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="datetime-local" name="datetime" required>
+      <textarea name="notes" placeholder="Project details..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="thankYou" class="thank-you">Thanks! Your booking has been sent.</p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about">
+<div class="about-container">
+<img src="images/zeyd.png" alt="Zeyd">
+<div class="about-text">
+<h2>About</h2>
+<p>
+ZeydWav is a music producer and audio engineer helping artists
+turn ideas into finished records with a modern, professional sound.
+</p>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+<h2>Services</h2>
+<div class="service-grid">
+<div class="service-card tilt"><h3>Producing</h3></div>
+<div class="service-card tilt"><h3>Engineering</h3></div>
+<div class="service-card tilt"><h3>Recording</h3></div>
+<div class="service-card tilt"><h3>Beat Making</h3></div>
+<div class="service-card tilt"><h3>Sound Design</h3></div>
+<div class="service-card tilt"><h3>Mixing</h3></div>
+<div class="service-card tilt"><h3>Consulting</h3></div>
+<div class="service-card tilt"><h3>Songwriting</h3></div>
+</div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+<h2>Why Choose ZeydWav</h2>
+<div class="why-grid">
+<div>🎧 Industry-quality sound</div>
+<div>🎤 Artist-focused sessions</div>
+<div>🔥 Unique production style</div>
+</div>
+</section>
+
+<!-- BEATS -->
+<section class="beats">
+<h2>Listen</h2>
+<div class="beat-card">
+<h3>Latest Work</h3>
+<canvas id="audioVisualizer"></canvas>
+<audio id="beatAudio" controls>
+<source src="audio/beat1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</section>
+
+<!-- TOP HITS -->
+<section class="hits">
+<h2>Top Hits</h2>
+<div class="video-grid">
+
+<div class="video-card">
+<iframe src="https://www.youtube.com/embed/YJRPOzJ3bfE" allowfullscreen></iframe>
+</div>
+
+<div class="video-card">
+<iframe src="https://www.youtube.com/embed/YVMeU9TNxuY" allowfullscreen></iframe>
+</div>
+
+<div class="video-card">
+<iframe src="https://www.youtube.com/embed/XkZYNL4rK_I" allowfullscreen></iframe>
+</div>
+
+</div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+<h2>Pricing</h2>
+<div class="pricing-grid">
+<div class="card tilt">
+<h3>Studio Rent</h3>
+<p class="price">80€ / hour</p>
+</div>
+<div class="card tilt">
+<h3>All-in-One</h3>
+<p class="price">150€</p>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+<h2>What Artists Say</h2>
+<div class="testimonial">
+<p>"Best studio experience I've had. Sound is crazy clean."</p>
+<span>- Artist</span>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Ready to work?</h2>
+<p>Book your session and bring your sound to life.</p>
+<button class="btn-cta">Start a Session →</button>
+</section>
+
+<section class="contact">
+<h2>Contact</h2>
+
+<div class="contact-card">
+<p>Have a question or want to collaborate?</p>
+
+<a href="mailto:zeyd.hasla@gmail.com" class="contact-email">
+zeyd.hasla@gmail.com
+</a>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© ZeydWav</p>
+<div class="social-links">
+<a href="https://www.instagram.com/zeyd.wav/" target="_blank">Instagram</a>
+<a href="#">Spotify</a>
+<a href="#">SoundCloud</a>
+</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
